@@ -48,14 +48,14 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 px-4">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMxQTJCNEMiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
         
-        <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
-          {/* Left Content */}
-          <div className="text-center lg:text-left space-y-8">
-            <Badge className="bg-teal-100 text-teal-800 border-teal-200 text-sm font-medium px-4 py-2">
+        <div className="container mx-auto max-w-6xl">
+          {/* Centered Content */}
+          <div className="text-center space-y-8 mb-16">
+            <Badge className="bg-teal-100 text-teal-800 border-teal-200 text-sm font-medium px-4 py-2 mx-auto">
               🚀 Verified PayPal Solution
             </Badge>
             
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+            <h1 className="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight max-w-4xl mx-auto">
               Receive Global
               <span className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent block">
                 Payments
@@ -63,12 +63,12 @@ const Index = () => {
               Without Limits
             </h1>
             
-            <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Step-by-step guide to creating your verified USA PayPal account in days. 
               Perfect for freelancers, survey takers, and online entrepreneurs.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start">
+            <div className="flex flex-col items-center gap-6">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
@@ -77,8 +77,8 @@ const Index = () => {
                 <ArrowRight className="ml-2" size={20} />
               </Button>
               
-              <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start gap-1 mb-1">
+              <div className="text-center">
+                <div className="flex items-center justify-center gap-1 mb-1">
                   {Array.from({length: 5}).map((_, i) => (
                     <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
                   ))}
@@ -87,7 +87,7 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="flex items-center gap-6 text-sm text-slate-500">
+            <div className="flex items-center justify-center gap-6 text-sm text-slate-500">
               <div className="flex items-center gap-2">
                 <Shield size={16} />
                 <span>Secure Download</span>
@@ -99,9 +99,9 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Right Content - 3D Ebook Mockup */}
-          <div className="relative flex justify-center">
-            <div className="relative transform rotate-6 hover:rotate-3 transition-transform duration-700 animate-[float_6s_ease-in-out_infinite]">
+          {/* Centered 3D Ebook Mockup */}
+          <div className="flex justify-center">
+            <div className="relative transform hover:scale-105 transition-transform duration-700 animate-[float_6s_ease-in-out_infinite]">
               <div className="w-80 h-96 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg shadow-2xl relative overflow-hidden">
                 {/* Book Cover Design */}
                 <div className="absolute inset-4 bg-gradient-to-br from-teal-500 to-blue-600 rounded-md flex flex-col justify-between p-6 text-white">
@@ -133,7 +133,7 @@ const Index = () => {
 
       {/* Benefits Section */}
       <section className="py-20 bg-white px-4">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
               Why This Guide Changes Everything
@@ -143,7 +143,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {[
               {
                 icon: <CheckCircle className="text-teal-600" size={32} />,
@@ -186,7 +186,7 @@ const Index = () => {
 
       {/* How It Works Section */}
       <section className="py-20 bg-slate-50 px-4">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
               How It Works
@@ -196,7 +196,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
+          <div className="space-y-12">
             {[
               {
                 step: "01",
@@ -219,9 +219,9 @@ const Index = () => {
                 description: "Your verified PayPal account is ready to receive international payments without limits."
               }
             ].map((step, index) => (
-              <div key={index} className="flex items-start gap-8 mb-12 last:mb-0">
+              <div key={index} className="flex flex-col md:flex-row items-center md:items-start gap-8 text-center md:text-left">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-r from-teal-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-gradient-to-r from-teal-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto md:mx-0">
                     {step.step}
                   </div>
                 </div>
@@ -229,7 +229,7 @@ const Index = () => {
                   <h3 className="text-2xl font-semibold text-slate-900 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-slate-600 text-lg leading-relaxed">
+                  <p className="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
                     {step.description}
                   </p>
                 </div>
@@ -241,7 +241,7 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-teal-600 to-blue-600 px-4">
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center max-w-4xl">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Start Receiving Global Payments?
           </h2>
@@ -253,8 +253,8 @@ const Index = () => {
             <div className="text-center">
               <div className="text-teal-100 text-lg mb-2">Limited Time Price</div>
               <div className="flex items-center justify-center gap-3 mb-2">
-                <span className="text-2xl text-teal-200 line-through">₦15,000</span>
-                <span className="text-4xl font-bold text-white">₦7,500</span>
+                <span className="text-2xl text-teal-200 line-through">₦10,000</span>
+                <span className="text-4xl font-bold text-white">₦5,000</span>
               </div>
               <div className="text-teal-100 text-sm">Save 50% - Today Only!</div>
             </div>
