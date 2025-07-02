@@ -158,7 +158,7 @@ const Index = () => {
               {
                 icon: <Clock className="text-orange-600" size={32} />,
                 title: "Quick Setup",
-                description: "Complete the entire process in 3-5 days following our step-by-step guide."
+                description: "Complete the entire process in 24-48 hours following our step-by-step guide."
               },
               {
                 icon: <Users className="text-purple-600" size={32} />,
