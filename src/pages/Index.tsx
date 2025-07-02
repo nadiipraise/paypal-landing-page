@@ -35,7 +35,7 @@ const Index = () => {
       <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-2 sm:py-3 text-center relative">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm font-medium px-4">
           <div className="flex items-center gap-2">
-            <Clock size={14} className="sm:w-4 sm:h-4" />
+            <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
             <span className="text-center">Limited Time: 50% OFF expires in</span>
           </div>
           <div className="flex gap-1 font-mono font-bold text-sm sm:text-base">
@@ -76,13 +76,13 @@ const Index = () => {
                 className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
               >
                 Unlock My Guide Now
-                <ArrowRight className="ml-2" size={16} className="sm:w-5 sm:h-5" />
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
               
               <div className="text-center">
                 <div className="flex items-center justify-center gap-1 mb-1">
                   {Array.from({length: 5}).map((_, i) => (
-                    <Star key={i} size={14} className="fill-yellow-400 text-yellow-400 sm:w-4 sm:h-4" />
+                    <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
                 <p className="text-xs sm:text-sm text-slate-500">4.9/5 from 2,847+ customers</p>
@@ -91,11 +91,11 @@ const Index = () => {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-slate-500 px-4">
               <div className="flex items-center gap-2">
-                <Shield size={14} className="sm:w-4 sm:h-4" />
+                <Shield className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>Secure Download</span>
               </div>
               <div className="flex items-center gap-2">
-                <RefreshCw size={14} className="sm:w-4 sm:h-4" />
+                <RefreshCw className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>Terms & Conditions Apply</span>
               </div>
             </div>
@@ -115,7 +115,7 @@ const Index = () => {
                   </div>
                   <div className="text-right">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center mb-2">
-                      <Shield className="text-white" size={20} className="sm:w-6 sm:h-6" />
+                      <Shield className="text-white w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
                     <p className="text-xs text-teal-100">Complete Guide</p>
                   </div>
@@ -148,22 +148,22 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-5xl mx-auto">
             {[
               {
-                icon: <CheckCircle className="text-teal-600" size={28} className="sm:w-8 sm:h-8" />,
+                icon: <CheckCircle className="text-teal-600 w-7 h-7 sm:w-8 sm:h-8" />,
                 title: "100% Legal Method",
                 description: "Fully compliant with PayPal's terms of service. No account suspensions."
               },
               {
-                icon: <Shield className="text-blue-600" size={28} className="sm:w-8 sm:h-8" />,
+                icon: <Shield className="text-blue-600 w-7 h-7 sm:w-8 sm:h-8" />,
                 title: "Verified Status",
                 description: "Get your account verified and increase your withdrawal limits significantly."
               },
               {
-                icon: <Clock className="text-orange-600" size={28} className="sm:w-8 sm:h-8" />,
+                icon: <Clock className="text-orange-600 w-7 h-7 sm:w-8 sm:h-8" />,
                 title: "Quick Setup",
                 description: "Complete the entire process in 24-48 hours following our step-by-step guide."
               },
               {
-                icon: <Users className="text-purple-600" size={28} className="sm:w-8 sm:h-8" />,
+                icon: <Users className="text-purple-600 w-7 h-7 sm:w-8 sm:h-8" />,
                 title: "Expert Support",
                 description: "Access to our private community and direct support from our team."
               }
@@ -266,7 +266,7 @@ const Index = () => {
             size="lg"
             className="bg-white text-teal-600 hover:bg-teal-50 px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
           >
-            <Lock className="mr-2" size={18} className="sm:w-5 sm:h-5" />
+            <Lock className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
             Get Instant Access Now
           </Button>
           
