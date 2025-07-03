@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -71,13 +70,15 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col items-center gap-4 sm:gap-6 px-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-              >
-                Unlock My Guide Now
-                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </Button>
+              <a href="https://selar.com/5171c9" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+                >
+                  Unlock My Guide Now
+                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                </Button>
+              </a>
               
               <div className="text-center">
                 <div className="flex items-center justify-center gap-1 mb-1">
@@ -262,13 +263,15 @@ const Index = () => {
             </div>
           </div>
           
-          <Button 
-            size="lg"
-            className="bg-white text-teal-600 hover:bg-teal-50 px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-          >
-            <Lock className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-            Get Instant Access Now
-          </Button>
+          <a href="https://selar.com/5171c9" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <Button 
+              size="lg"
+              className="bg-white text-teal-600 hover:bg-teal-50 px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              <Lock className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+              Get Instant Access Now
+            </Button>
+          </a>
           
           <p className="text-teal-100 text-xs sm:text-sm mt-4 px-4">
             Terms & Conditions Apply • Secure payment • Instant download
